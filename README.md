@@ -27,3 +27,19 @@ A neon-themed, modular Bash dashboard that displays real-time system health metr
 git clone https://github.com/<your-username>/System-Health-Dashboard.git
 cd System-Health-Dashboard
 chmod +x dashboard.sh
+
+(Optional) Add to your PATH:
+
+bash
+sudo ln -s "$(pwd)/dashboard.sh" /usr/local/bin/sysdash
+Then run:
+
+bash
+./dashboard.sh
+# or
+sysdash
+Usage
+bash
+./dashboard.sh          # One-time snapshot
+./dashboard.sh --live   # Live updating dashboard (default 1s interval)
+./dashboard.sh --live 2 # Live updating with 2s interval
